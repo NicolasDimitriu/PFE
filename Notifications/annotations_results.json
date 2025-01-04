@@ -1,0 +1,134 @@
+[
+    {
+        "file_name": "Notification4Vice.pdf",
+        "text": "Objet : Notification relative à une convocation en audience correctionnelle Référence : Dossier n° 9876 / Tribunal de Grande Instance de Bordeaux / 20 janvier 2025  Cabinet d’Avocats Garnier & Co 8, Rue de la Liberté 33000 Bordeaux Téléphone : 05 56 78 90 34 Email : contact@bordeaux-avocats.fr DESTINATAIRE Madame Sophie Martin 10, Avenue des Roses 33000 Bordeaux Lieu et date d’émission : Bordeaux, le 20 janvier 2025  Madame, Monsieur, Dans le cadre de la procédure pénale en cours, nous vous informons par la présente : 1. Identité de la partie : o Partie concernée : Mme Sophie Martin o Numéro de dossier : 9876 2. Objet de la notification : o Vous êtes convoqué(e) à l’audience correctionnelle qui se tiendra le 15 février 2025 à 14h30, au Tribunal de Grande Instance de Bordeaux, 15 Place du Palais, 33000 Bordeaux. 3. Indications / Suites à donner : o Vous êtes prié(e) de vous présenter devant le tribunal à la date et à l’heure indiquées, muni(e) de vos pièces justificatives. o Vous pouvez vous faire assister d’un avocat. 4. Base légale : o Articles 651 et suivants du Code de procédure civile.   Nous vous remercions de votre attention. Veuillez agréer, Madame, Monsieur, l’expression de nos salutations distinguées.             Signature  \n",
+        "annotations": [
+            {
+                "start": 148,
+                "end": 163,
+                "label": "DATE_EMISSION"
+            },
+            {
+                "start": 572,
+                "end": 1253,
+                "label": "PARTIE_CONCERNEE"
+            },
+            {
+                "start": 612,
+                "end": 616,
+                "label": "NUMERO_DOSSIER"
+            },
+            {
+                "label": "VICE_NOTIFICATION",
+                "description": "Absence de preuve de notification : Le courrier ne mentionne pas si une preuve de remise sera utilisée."
+            }
+        ],
+        "vices_detected": [
+            "Absence de preuve de notification : Le courrier ne mentionne pas si une preuve de remise sera utilisée."
+        ],
+        "label": 1
+    },
+    {
+        "file_name": "Notification6Vice.pdf",
+        "text": "Objet : Notification de saisie conservatoire Référence : Dossier n° 6543 / Tribunal de Commerce de Nice / 25 janvier 2025 Cabinet d'Huissiers Nice Huissiers 12, Rue des Palmiers 06000 Nice Téléphone : 04 92 34 56 78 Email : huissiers.nice@justiceinvalid.fr DESTINATAIRE Monsieur Paul Renault 45, Avenue des Oliviers 06000 Nice Lieu et date d’émission : Nice, le 25 janvier 2025 Madame, Monsieur, Suite à la décision de justice prononcée le 20 janvier 2025, nous vous notifions : 1. Objet de la notification : o Une saisie conservatoire sur vos biens mobiliers et immobiliers à hauteur de 25 000 €. 2. Base légale : o Articles 511 à 531 du Code de procédure civile.  ",
+        "annotations": [
+            {
+                "start": 106,
+                "end": 121,
+                "label": "DATE_EMISSION"
+            },
+            {
+                "label": "VICE_NOTIFICATION",
+                "description": "Absence de signature : La notification ne comporte pas la signature de l’huissier."
+            }
+        ],
+        "vices_detected": [
+            "Absence de signature : La notification ne comporte pas la signature de l’huissier."
+        ],
+        "label": 1
+    },
+    {
+        "file_name": "Notification5.pdf",
+        "text": "Objet : Notification relative à un rappel de droits Référence : Dossier n° 1234 / Tribunal Administratif de Lille / 22 janvier 2025 Cabinet d’Avocats Lefèvre & Associés 18, Rue des Fleurs 59000 Lille Téléphone : 03 20 45 67 89 Email : contact@lille-avocats.fr DESTINATAIRE Monsieur Alain Dubois 50, Boulevard de la Liberté 59000 Lille Lieu et date d’émission : Lille, le 22 janvier 2025 Madame, Monsieur, Nous vous rappelons que dans le cadre de la procédure administrative en cours : 1. Vos droits à une défense équitable : o Vous avez le droit de consulter votre dossier en amont de toute décision. o Vous pouvez solliciter une médiation administrative avant le jugement définitif. 2. Objet de la notification : o Rappel des droits à une défense équitable en vertu des articles R. 123-45 du Code de justice administrative. Pour toute question, contactez notre cabinet ou le greffe du tribunal administratif.  ",
+        "annotations": [
+            {
+                "start": 116,
+                "end": 131,
+                "label": "DATE_EMISSION"
+            },
+            {
+                "label": "VICE_NOTIFICATION",
+                "description": "Absence de signature : La notification ne comporte pas la signature de l’huissier."
+            },
+            {
+                "label": "VICE_NOTIFICATION",
+                "description": "Absence de preuve de notification : Le courrier ne mentionne pas si une preuve de remise sera utilisée."
+            }
+        ],
+        "vices_detected": [
+            "Absence de signature : La notification ne comporte pas la signature de l’huissier.",
+            "Absence de preuve de notification : Le courrier ne mentionne pas si une preuve de remise sera utilisée."
+        ],
+        "label": 1
+    },
+    {
+        "file_name": "Notification1.pdf",
+        "text": "Objet : Notification relative à une convocation en audience correctionnelle Référence : Dossier n° 4567 / Tribunal de Grande Instance de Paris / 12 janvier 2025 Cabinet d’Avocats Dupond & Associés 2, Avenue de la République Fictive 75000 Paris Téléphone : 01 23 45 67 89      Email : contact@parisian-avocats.fr DESTINATAIRE Monsieur Jean Dupont 42, Avenue des Champs Fleuris 75010 Paris Lieu et date d’émission : Paris, le 12 janvier 2025 ___________________________________________________________________________ Madame, Monsieur, Dans le cadre de la procédure pénale en cours, nous vous informons par la présente : 1. Identité de la partie : o Partie concernée par la notification : M. Jean Dupont o Numéro de dossier / Référence : 4567 2. Objet de la notification : o Vous êtes convoqué(e) à l’audience correctionnelle qui se tiendra le 5 février 2025 à 9h30, au Tribunal de Grande Instance de Paris, 4 Boulevard du Palais, 75001 Paris. o Cette convocation fait suite aux charges retenues à votre encontre pour « exercice illégal d’une activité réglementée » (article L. 123-7 du Code de la consommation). 3. Indications / Suites à donner : o Vous êtes prié(e) de vous présenter devant le tribunal à la date et à l’heure indiquées ci-dessus, muni(e) de toute pièce justificative nécessaire à votre défense. o Vous pouvez, si vous le souhaitez, vous faire assister d’un avocat (article 417 du Code de procédure pénale). 4. Base légale : o Conformément aux articles 651 et suivants du Code de procédure civile, et en vertu de l’article 389 du Code de procédure pénale relatif aux notifications et convocations, cette convocation vous est valablement notifiée. Une preuve de remise sera fournie via accusé de réception signé. Pour toute question ou précision concernant la présente notification, vous pouvez prendre contact avec : • Service de Greffe du Tribunal de Grande Instance de Paris Téléphone : 01 23 45 67 89 Email : greffe.tgi.paris@justiceinvalid.fr Nous vous remercions de votre attention. Veuillez agréer, Madame, Monsieur, l’expression de nos salutations distinguées. Signature  \n",
+        "annotations": [
+            {
+                "start": 145,
+                "end": 160,
+                "label": "DATE_EMISSION"
+            }
+        ],
+        "vices_detected": [],
+        "label": 0
+    },
+    {
+        "file_name": "Notification3Vice.pdf",
+        "text": "Objet : Notification relative à une mise en demeure Référence : Dossier n° 5432 / Tribunal de Commerce de Marseille / 18 janvier 2025 Cabinet d’Avocats Verdi & Associés 5, Boulevard des Alliés 13001 Marseille Téléphone : 04 91 23 45 67 Email : contact@marseille-avocats.fr DESTINATAIRE Monsieur Lucas Morel 3, Rue des Coquelicots 13004 Marseille Lieu et date d’émission : Marseille, le 18 janvier 2025 Madame, Monsieur, Dans le cadre d’un litige commercial en cours, nous vous informons par la présente de la mise en demeure suivante : 1. Identité de la partie : o Partie concernée : M. Lucas Morel o Numéro de dossier : 5432 2. Objet de la notification : o Vous êtes mis en demeure de régulariser le paiement de la somme de 15 000 € correspondant à des factures impayées à l’encontre de la société « Delta Fournitures ». o À défaut de régularisation avant le 5 février 2025, des poursuites judiciaires seront engagées à votre encontre. 3. Base légale : o Conformément à l’article L. 123-7 du Code de commerce, cette mise en demeure vous est valablement notifiée. Pour toute précision, contactez : • Cabinet Verdi & Associés Téléphone : 04 91 23 45 67 Email : contact@marseille-avocats.fr  ",
+        "annotations": [
+            {
+                "start": 118,
+                "end": 133,
+                "label": "DATE_EMISSION"
+            },
+            {
+                "start": 584,
+                "end": 1190,
+                "label": "PARTIE_CONCERNEE"
+            },
+            {
+                "start": 621,
+                "end": 625,
+                "label": "NUMERO_DOSSIER"
+            },
+            {
+                "label": "VICE_NOTIFICATION",
+                "description": "Absence de signature : La notification ne comporte pas la signature de l’huissier."
+            },
+            {
+                "label": "VICE_NOTIFICATION",
+                "description": "Absence de preuve de notification : Le courrier ne mentionne pas si une preuve de remise sera utilisée."
+            }
+        ],
+        "vices_detected": [
+            "Absence de signature : La notification ne comporte pas la signature de l’huissier.",
+            "Absence de preuve de notification : Le courrier ne mentionne pas si une preuve de remise sera utilisée."
+        ],
+        "label": 1
+    },
+    {
+        "file_name": "Notification2.pdf",
+        "text": "Objet : Notification relative à une convocation en audience correctionnelle Référence : Dossier n° 7890 / Tribunal de Grande Instance de Lyon / 15 janvier 2025 Cabinet d’Avocats Martin & Associés 10, Rue de la Justice 69001 Lyon                         Téléphone : 04 56 78 90 12      Email : contact@lyon-avocats.fr DESTINATAIRE Madame Claire Leblanc 25, Rue des Lilas 69007 Lyon                                                  Lieu et date d’émission : Lyon, le 15 janvier 2025 Madame, Monsieur, Dans le cadre de la procédure pénale en cours, nous vous informons par la présente : 1. Identité de la partie : o Partie concernée par la notification : Mme Claire Leblanc o Numéro de dossier / Référence : 7890 2. Objet de la notification : o Vous êtes convoqué(e) à l’audience correctionnelle qui se tiendra le 10 février 2025 à 10h00, au Tribunal de Grande Instance de Lyon, 20 Quai de la République, 69001 Lyon. o Cette convocation fait suite aux charges retenues à votre encontre pour « diffamation publique envers un particulier » (article 32 de la loi du 29 juillet 1881). 3. Indications / Suites à donner : o Vous êtes prié(e) de vous présenter devant le tribunal à la date et à l’heure indiquées ci-dessus, muni(e) de toute pièce justificative nécessaire à votre défense. o Vous pouvez, si vous le souhaitez, vous faire assister d’un avocat (article 417 du Code de procédure pénale). 4. Base légale : o Conformément aux articles 651 et suivants du Code de procédure civile, et en vertu de l’article 389 du Code de procédure pénale relatif aux notifications et convocations, cette convocation vous est valablement notifiée. Une preuve de remise sera fournie via accusé de réception signé. Pour toute question ou précision concernant la présente notification, vous pouvez prendre contact avec : • Service de Greffe du Tribunal de Grande Instance de Lyon Téléphone : 04 56 78 90 12 Nous vous remercions de votre attention. Veuillez agréer, Madame, Monsieur, l’expression de nos salutations distinguées.             Signature \n ",
+        "annotations": [
+            {
+                "start": 144,
+                "end": 159,
+                "label": "DATE_EMISSION"
+            }
+        ],
+        "vices_detected": [],
+        "label": 0
+    }
+]
