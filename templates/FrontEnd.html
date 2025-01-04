@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analyseur de PDF</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .container {
+            width: 80%;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .button-group, .upload-section {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .button-group button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            margin: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        .result-box {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Analyseur de PDF</h1>
+    </header>
+    <div class="container">
+        <div class="button-group">
+            <button onclick="selectDoctype('Notification')">Notification</button>
+            <button onclick="selectDoctype('Signification')">Signification</button>
+            <button onclick="selectDoctype('Ordonnance')">Ordonnance</button>
+            <button onclick="selectDoctype('Jugement')">Jugement</button>
+            <button onclick="selectDoctype('Conclusion')">Conclusion</button>
+            <button onclick="selectDoctype('Déclaration d’appel')">Déclaration d’appel</button>
+            <button onclick="selectDoctype('Assignation')">Assignation</button>
+            <button onclick="selectDoctype('Requête')">Requête</button>
+        </div>
+
+        <p id="selectedDoctype" style="text-align: center; margin-top: 10px; font-weight: bold;">
+            Aucun type de document sélectionné.
+        </p>
+
+        <div class="upload-section">
+            <input type="file" id="fileInput" accept=".pdf">
+            <button onclick="analyzePDF()">Analyser le PDF</button>
+        </div>
+
+        <div class="result-box" id="resultBox">
+            <p>Choisissez un type de document et téléchargez un fichier PDF pour voir les résultats ici.</p>
+        </div>
+    </div>
+
+    <script>
+        let selectedDoctype = "";
+
+        function selectDoctype(doctype) {
+            selectedDoctype = doctype;
+            document.getElementById("selectedDoctype").innerText = `Type de document sélectionné : ${doctype}`;
+        }
+
+        async function analyzePDF() {
+            const fileInput = document.getElementById("fileInput");
+            const file = fileInput.files[0];
+
+            if (!file) {
+                alert("Veuillez télécharger un fichier PDF.");
+                return;
+            }
+
+            if (!selectedDoctype) {
+                alert("Veuillez sélectionner un type de document.");
+                return;
+            }
+
+            const formData = new FormData();
+            formData.append("file", file);
+            formData.append("doctype", selectedDoctype);
+
+            try {
+                const response = await fetch("/analyze", {
+                    method: "POST",
+                    body: formData,
+                });
+
+                const result = await response.json();
+                document.getElementById("resultBox").innerText = result.message;
+            } catch (error) {
+                console.error("Erreur lors de l'analyse :", error);
+                alert("Une erreur est survenue.");
+            }
+        }
+    </script>
+</body>
+</html>
