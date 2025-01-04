@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choisir un document et télécharger un PDF</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 30px;
+        }
+
+        .button-group {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .button-group button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            margin: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .button-group button:hover {
+            background-color: #45a049;
+        }
+
+        .upload-section {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .upload-section input[type="file"] {
+            padding: 10px;
+            margin: 10px;
+            font-size: 16px;
+        }
+
+        .result-box {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Choisissez un Document</h1>
+    </header>
+    <div class="container">
+        <div class="button-group">
+            <button onclick="selectDocument('Document 1')">Document 1</button>
+            <button onclick="selectDocument('Document 2')">Document 2</button>
+            <button onclick="selectDocument('Document 3')">Document 3</button>
+            <button onclick="selectDocument('Document 4')">Document 4</button>
+        </div>
+        <div class="upload-section">
+            <input type="file" id="fileInput" accept=".pdf" onchange="handleFileUpload()">
+        </div>
+        <div class="result-box" id="resultBox">
+            <p>Choisissez un document et téléchargez un fichier PDF pour voir les résultats ici.</p>
+        </div>
+    </div>
+    <script>
+        let selectedDocument = ""; // Fonction pour sélectionner un document
+
+        function selectDocument(document) {
+            selectedDocument = document;
+            document.getElementById("resultBox").innerHTML = `<p><strong>Document sélectionné :</strong> ${document}</p>`;
+        }
+
+        // Fonction pour gérer l'upload du fichier PDF
+        function handleFileUpload() {
+            const fileInput = document.getElementById("fileInput");
+            const resultBox = document.getElementById("resultBox");
+            const file = fileInput.files[0];
+
+            if (file && file.type === "application/pdf") {
+                resultBox.innerHTML = `
+                    <p><strong>Document sélectionné :</strong> ${selectedDocument}</p>
+                    <p><strong>Nom du fichier téléchargé :</strong> ${file.name}</p>
+                    <p><strong>Taille :</strong> ${file.size / 1024} Ko</p>
+                `;
+            } else {
+                resultBox.innerHTML = `<p>Veuillez télécharger un fichier PDF.</p>`;
+            }
+        }
+    </script>
+</body>
+
+</html>
